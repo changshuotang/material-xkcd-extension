@@ -3,9 +3,13 @@
   <head>
     <title>XKCD Popup</title>
     <style>
+      @import url(https://fonts.googleapis.com/css?family=Raleway:100,400);
       body {
         text-align: center;
         width: 600px;
+        font-family: 'Raleway';
+        background-color: #f1f2f0;
+        font-weight: 700;
       }
       div {
         display:inline-block;
@@ -15,16 +19,24 @@
         box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
         cursor:pointer;
         vertical-align:middle;
-        max-width: 100px;
         padding: 5px;
         text-align: center;
       }
       div:active {
-        color:red;
+        color: white;
         box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+      }
+      div:hover {
+        opacity: 0.75;
       }
       img {
         max-width: 600px;
+      }
+      a {
+        text-decoration: underline;
+      }
+      a:hover {
+        opacity: 0.5;
       }
     </style>
     <script src="popup.js"></script>
@@ -32,16 +44,16 @@
   <body>
     <header>
       <h1 id="comicTitle">Comic Title</h1>
-      <div id="getFirst"><<</div>
-      <div id="getPrevious"><</div>
-      <div id="getRandom">?</div>
-      <div id="getNext">></div>
-      <div id="getLast">>></div>
+      <div id="getFirst">|<</div>
+      <div id="getPrevious">PREV</div>
+      <div id="getRandom">RANDOM</div>
+      <div id="getNext">NEXT></div>
+      <div id="getLast">>|</div>
       <h2 id="comicNumber"></h1>
     </header>
     <img id="comicImg">   
     <p>
-      <a href="https://xkcd.com/">https://xkcd.com/<a>
+      <a id="openSite">https://xkcd.com/</a>
     </p>
     </table>  
   </body>

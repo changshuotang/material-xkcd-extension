@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('getRandom').addEventListener('click', renderRandom);
   document.getElementById('getNext').addEventListener('click', renderNext);
   document.getElementById('getLast').addEventListener('click', renderLast);
+  document.getElementById('openSite').addEventListener('click', openSite);
 });
 
 function renderComic(url){
@@ -64,6 +65,10 @@ function renderRandom(){
 
 function renderLast(){
 	renderComic(defaultUrl);
+}
+
+function openSite(){
+	chrome.tabs.create({ url: "https://xkcd.com/" });
 }
 
 
