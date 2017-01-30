@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title>XKCD Popup</title>
+    <style>
+      body {
+        text-align: center;
+        width: 600px;
+      }
+      div {
+        display:inline-block;
+        color:#444;
+        border:1px solid #CCC;
+        background:#DDD;
+        box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+        cursor:pointer;
+        vertical-align:middle;
+        max-width: 100px;
+        padding: 5px;
+        text-align: center;
+      }
+      div:active {
+        color:red;
+        box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+      }
+      img {
+        max-width: 600px;
+      }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="comicTitle">Comic Title</h1>
+      <div id="getFirst"><<</div>
+      <div id="getPrevious"><</div>
+      <div id="getRandom">?</div>
+      <div id="getNext">></div>
+      <div id="getLast">>></div>
+      <h2 id="comicNumber"></h1>
+    </header>
+    <img id="comicImg">   
+    <p>
+      <a href="https://xkcd.com/">https://xkcd.com/<a>
+    </p>
+    </table>  
+  </body>
+</html>
