@@ -1,6 +1,6 @@
 {
   "name": "XKCD Popup",
-  "description": "Popup Extension display XKCD comics.",
+  "description": "Popup displaying XKCD comics.",
   "version": "1.0",
   "permissions": [
     "tabs", "http://*/*", "https://*/*"

@@ -33,6 +33,7 @@ function renderUrl(arr){
 	document.getElementById('comicTitle').innerHTML = arr.title;
 	document.getElementById('comicImg').src = arr.img;
 	comicNum = arr.num;
+	document.getElementById('comicNumber').innerHTML = "#" + comicNum;
 	if (comicNum > comicMax){
 		comicMax = comicNum;
 	}
