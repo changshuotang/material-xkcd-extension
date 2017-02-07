@@ -1,6 +1,6 @@
 {
   "name": "Material XKCD",
-  "description": "Popup displaying XKCD comics with material design.",
+  "description": "Popup tab displaying XKCD comics with material design.",
   "version": "1.0",
   "permissions": [
     "tabs", "http://*/*", "https://*/*"
@@ -10,5 +10,8 @@
       "default_icon": "icon.png",
       "default_popup": "popup.html"
   },
+  "icons": {
+      "128": "icon.png"
+   },
   "manifest_version": 2
 }
