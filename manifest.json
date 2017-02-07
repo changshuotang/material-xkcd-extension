@@ -1,7 +1,7 @@
 {
   "name": "Material XKCD",
   "description": "Popup tab displaying XKCD comics with material design.",
-  "version": "1.0",
+  "version": "1.0.1",
   "permissions": [
     "tabs", "http://*/*", "https://*/*"
   ],
